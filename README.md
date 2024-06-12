@@ -5,7 +5,7 @@ Este projeto utiliza uma rede neural profunda para classificação no conjunto d
 Para os casos experimentais, o conjunto de dados foi dividido com 70% das amostras para treinamento e 30% para teste, garantindo a aleatoriedade das amostras.
 
 ## Rede Neural
-Uma rede neural perceptron de três camadas foi criada: uma camada de entrada, uma camada oculta com 20 neurônios e uma camada de saída com 3 neurônios para indicar as três espécies de flores. O método de propagação direta (feedforward) e o algoritmo PSO foram utilizados para otimizar os hiperparâmetros da rede, evoluindo os valores de peso e bias ao longo das épocas de treinamento.
+Uma rede neural perceptron de três camadas foi criada: uma camada de entrada, uma camada oculta com 20 neurônios e uma camada de saída com 3 neurônios para indicar as três espécies de flores. O método de propagação direta (feedforward) e o algoritmo PSO foram utilizados para otimizar os hiperparâmetros da rede, fazendo uso do módulo PySwarms para evoluir as partículas e encontrar a melhor solução.
 
 ## Casos Experimentais
 Foram definidos valores de parâmetros específicos para a execução do algoritmo de PSO durante o treinamento da rede neural. Dois casos experimentais foram conduzidos:
@@ -18,6 +18,9 @@ Utilizado apenas o comprimento e largura das pétalas para treinar a rede neural
 
 ## Conclusão
 A otimização por enxame de partículas mostrou-se eficaz para automatizar a seleção de valores de hiperparâmetros de uma rede neural profunda, alcançando uma alta probabilidade de resultados assertivos. O uso de características relevantes do conjunto de dados pode aumentar a precisão do processo de classificação.
+
+## Outras Tentativas
+O diretório `outras_tentativas` contém o notebook `pso.ipynb` adicional com experimentos de Random Walk e PSO, aplicados a diferentes problemas de otimização, incluindo a minimização de equações e a busca por palavras-alvo.
 
 ## Requisitos
 - `numpy`
